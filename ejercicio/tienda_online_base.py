@@ -23,7 +23,7 @@ class StripeLegacy:
         print(f"[Stripe] Tarjeta cobrada por la cantidad de ${total_dollars}")
 
 
-class StripeAdapter(InterfazPago):
+class StripeAdapter(InterfazPagoS):
     def __init__(self, stripe_legacy: StripeLegacy) -> None:
         self.stripe = stripe_legacy
 
